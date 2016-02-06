@@ -1,0 +1,8 @@
+.DS_Store
+logs
+*.log
+pids
+*.pid
+*.seed
+node_modules
+token.js
