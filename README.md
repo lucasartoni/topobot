@@ -8,3 +8,9 @@ So far the bot can control two main systems:
 * Sonos - Two Sonos devices
 
 Have a look at the code, take what you need, play as you like.
+
+### Credits
+I have been inspired by [The NorrisBot](https://scotch.io/tutorials/building-a-slack-bot-with-node-js-and-chuck-norris-super-powers), and I used a few libraries to get this done. 
+
+* (node-hue-api)[https://github.com/peter-murray/node-hue-api]
+* (node-sonos)[https://github.com/bencevans/node-sonos]
