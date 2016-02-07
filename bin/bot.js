@@ -1,18 +1,18 @@
 'use strict';
 
-var TopoBot = require('../lib/topobot');
+var TopoBot = require( '../lib/topobot' ),
+	fs = require ( 'fs' ),
+	configFile = '../settings/settings.json',
+	config = JSON.parse( fs.readFileSync( configFile ) );
 
-var token = process.env.BOT_API_KEY || require( '../settings/token' ),
-	username = process.env.USERNAME || require( '../settings/username'),
-	bridgeip = process.env.BRIDGEIP || require( '../settings/bridgeip');
+var topobot = new TopoBot( {
 
-
-
-var topobot = new TopoBot({
-    token: token,
-    username: username,
-    bridgeip: bridgeip,
+    token: config.token,
+    username: config.username,
+    bridgeip: config.bridgeip,
+    sonosip: config.sonosip,
     name: 'TopoBot'
-});
+
+} );
 
 topobot.run();
