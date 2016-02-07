@@ -2,7 +2,7 @@
 
 var TopoBot = require( '../lib/topobot' ),
 	fs = require ( 'fs' ),
-	configFile = '../settings/settings.json',
+	configFile = __dirname + '/../settings/settings.json',
 	config = JSON.parse( fs.readFileSync( configFile ) );
 
 var topobot = new TopoBot( {
