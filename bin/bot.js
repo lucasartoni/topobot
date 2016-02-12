@@ -12,6 +12,7 @@ var topobot = new TopoBot( {
     username: config.username,
     bridgeip: config.bridgeip,
     sonosip: config.sonosip,
+    phoneip: config.phoneip,
     name: 'TopoBot'
 
 } );
