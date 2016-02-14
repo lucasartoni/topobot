@@ -1,0 +1,33 @@
+{
+  "name": "TopoBot",
+  "version": "0.0.1",
+  "description": "My silly take on home automation",
+  "bin": {
+    "topobot": "bot.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasartoni/topobot.git"
+  },
+  "keywords": [
+    "Topobot",
+    "automation",
+    "slack"
+  ],
+  "author": "Luca Sartoni",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lucasartoni/topobot/issues"
+  },
+  "homepage": "https://github.com/lucasartoni/topobot#readme",
+  "dependencies": {
+    "node-hue-api": "2.1.1",
+    "ping": "^0.1.10",
+    "slackbots": "0.5.1",
+    "sonos": "0.11.1"
+  }
+}
