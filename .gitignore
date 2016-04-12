@@ -7,3 +7,4 @@ pids
 node_modules
 settings.js
 settings.json
+/misc
